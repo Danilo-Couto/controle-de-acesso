@@ -70,7 +70,7 @@ public class Principal {
           break;
 
         default:
-          System.out.println("Opção inválida. Tente novamente.");
+          System.out.println("Entre com uma opção válida.");
           break;
       }
     } while (option != 2);
