@@ -3,7 +3,14 @@ package com.trybe.acc.java.controledeacesso;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
+/**
+ * Controla acesso.
+ */
 public class Principal {
+
+  /**
+   * Classe principal.
+   */
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     int option;
@@ -14,7 +21,9 @@ public class Principal {
     int elderies = 0;
 
     do {
-      System.out.println("Entre com o número correspondente à opção desejada \n1 - Acessar o estabelecimento\n2 - Finalizar sistema e mostrar relatório");
+      System.out.println("Entre com o número correspondente à opção desejada "
+          + "\n1 - Acessar o estabelecimento"
+          + "\n2 - Finalizar sistema e mostrar relatório");
 
       option = scanner.nextInt();
 
@@ -48,7 +57,11 @@ public class Principal {
           DecimalFormat df = new DecimalFormat("0.00");
 
           System.out.println();
-          System.out.println("----- Quantidade -----\n" + "menores:" + minors + "\n" + "adultas:" + adults + "\n" + "a partir de 50:" + elderies + "\n");
+          System.out.println("----- Quantidade -----\n"
+              + "menores:" + minors + "\n"
+              + "adultas:" + adults + "\n"
+              + "a partir de 50:"
+              + elderies + "\n");
           System.out.println("----- Percentual -----");
           System.out.println("menores: " + df.format(minorsPercentage) + "%");
           System.out.println("adultas: " + df.format(adultsPercentage) + "%");
