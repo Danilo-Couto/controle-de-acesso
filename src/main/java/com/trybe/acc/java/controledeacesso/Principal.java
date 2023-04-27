@@ -1,10 +1,10 @@
 package com.trybe.acc.java.controledeacesso;
+
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Principal {
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
         int option;
 
@@ -25,17 +25,17 @@ public class Principal {
 
                     String message;
 
-                    qntPeople +=1;
+                    qntPeople += 1;
 
                     if (age < 18) {
                         message = "Pessoa cliente menor de idade, catraca liberada!";
-                        minors ++;
+                        minors++;
                     } else if (age <= 49) {
                         message = "Pessoa adulta, catraca liberada!";
-                        adults ++;
+                        adults++;
                     } else {
                         message = "Pessoa adulta a partir de 50, catraca liberada!";
-                        elderies ++;
+                        elderies++;
                     }
                     System.out.println(message);
                     break;
@@ -50,9 +50,9 @@ public class Principal {
                     System.out.println();
                     System.out.println(
                             "----- Quantidade -----\n" +
-                            "menores:" + minors + "\n" +
-                            "adultas:" + adults + "\n" +
-                            "a partir de 50:" + elderies + "\n"
+                                    "menores:" + minors + "\n" +
+                                    "adultas:" + adults + "\n" +
+                                    "a partir de 50:" + elderies + "\n"
                     );
                     System.out.println("----- Percentual -----");
                     System.out.println("menores: " + df.format(minorsPercentage) + "%");
