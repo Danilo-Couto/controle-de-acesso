@@ -30,7 +30,7 @@ public class Principal {
                     if (age < 18) {
                         message = "Pessoa cliente menor de idade, catraca liberada!";
                         minors ++;
-                    } else if (age >= 18 && age <= 49) {
+                    } else if (age <= 49) {
                         message = "Pessoa adulta, catraca liberada!";
                         adults ++;
                     } else {
@@ -47,7 +47,7 @@ public class Principal {
 
                     DecimalFormat df = new DecimalFormat("0.00");
 
-                    System.out.println("");
+                    System.out.println();
                     System.out.println(
                             "----- Quantidade -----\n" +
                             "menores:" + minors + "\n" +
